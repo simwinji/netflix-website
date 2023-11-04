@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../img/netflix-movie-teaser-image.png) no-repeat center center;
+    font-family: 'Netflix Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 10px;
+}
+
+.header {
+    padding: 20px 25px;
+    position: relative;
+    z-index: 10;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.wrapper::before {
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.login_body {
+    padding: 60px;
+    z-index: 40;
+    position: relative;
+    max-width: 450px;
+    height: 600px;
+    margin-left: 50%;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+}
+
+.login_body h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #fff;
+}
+
+.login_body input {
+    height: 40px;
+    width: 100%;
+    font-size: 17px;
+    border-radius: 3px;
+    color: #fff;
+    background: #333;
+    border: 1px solid #333;
+    padding-left: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.input_wrap {
+    margin-bottom: 25px;
+}
+
+.login_body button {
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    background: #e50914;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid #e50914;
+}
+
+.help {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+.help a {
+    text-decoration: none;
+    color: #999;
+}
+
+.help a:hover {
+    text-decoration: underline;
+}
+
+
+/* ------ input ------- */
+
+input[type=checkbox] {
+    background: #737373;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: 0;
+    height: 16px;
+    left: -20px;
+    width: 16px;
+    margin-right: 5px;
+}
+
+
+/* ------ input end ------- */
+
+.signup {
+    color: #fff;
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.signup a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.signup p {
+    color: #999;
+    margin-right: 5px;
+}
+
+.more {
+    color: #999;
+    margin-top: 1rem;
+    font-size: 0.8em;
+    line-height: 1.1em;
+}
+
+.more a {
+    color: rgb(17, 108, 228);
+}
+
+.more a:hover,
+.signup a:hover {
+    text-decoration: underline;
+}
+
+
+/* ------ FOOTER ------- */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 90px;
+    padding: 4rem 0;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.footer .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 75%;
+}
+
+.footer .content li {
+    padding: 10px 0;
+    list-style-type: none;
+}
+
+.footer .content li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .content li a:hover {
+    border-bottom: 1px solid #ccc;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 1;
+    transition-timing-function: ease-in-out;
+    transition: all 0.2s;
+}
+
+.nav.active {
+    background: #111;
+}
+
+.nav_left {
+    margin-left: 10px;
+}
+
+.nav_logo {
+    width: 180px;
+}
+
+.nav_right {
+    position: fixed;
+    right: 20px;
+    display: flex;
+    margin-right: 10px;
+}
+
+.nav_black {
+    background: #111;
+}
+
+.nav-avatar {
+    width: 30px;
+    object-fit: contain;
+}
+
+.nav-logo {
+    width: 80px;
+    object-fit: contain;
+}

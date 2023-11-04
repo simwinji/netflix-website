@@ -1,0 +1,85 @@
+*{
+    font-family: Arial, 'Poppins', sans-serif;
+    color: #000;
+}
+
+html,body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: #000;
+
+}
+
+.sign-container{
+    background: #efefee;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;
+}
+
+.sign-message{
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+}
+
+form{
+    display: block;
+    margin-top: 0;
+}
+
+form h3{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    margin: 0;
+    padding-top: 16px;
+}
+
+.column{
+    background: #fff;
+    min-height: 300px;
+    max-height: 100%;
+    width: 450px;
+}
+
+.column .header span{
+    font-size: 14px;
+}
+
+.column .header img{
+    width: 200px;
+    align-items: center;
+}
+
+.column form{
+    display: flex;
+    flex-direction: column;
+}
+
+.column form input[type="text"], 
+.column form input[type="email"], 
+.column form input[type="password"]{
+    font-size: 14px;
+    margin: 15px 30px;
+    border: none;
+    border-bottom: 1px solid #beb9b9;
+}
+
+.column form input[type="submit"]{
+    background: #4285f4;
+    color: #fff;
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
